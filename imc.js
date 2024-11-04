@@ -11,8 +11,6 @@ function imc(){
         altura:formDados.get("altura"),
         classificacao:"",
         calcularIMC(){
-            if (this.altura > 3) this.altura=this.altura/100
-            const imc = this.peso/this.altura**2;
             if (imc < 22 ) this.classificacao = "baixo peso";
             if (imc >= 22 &&  imc < 24,9 ) this.classificacao = "Peso Normal"
             if (imc >= 25 &&  imc < 29,9 ) this.classificacao = "Excesso de Peso"
