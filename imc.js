@@ -12,9 +12,9 @@ function imc(){
         classificacao:"",
         calcularIMC(){
             if (imc < 22 ) this.classificacao = "baixo peso";
-            if (imc >= 22 &&  imc < 24,9 ) this.classificacao = "Peso Normal"
-            if (imc >= 25 &&  imc < 29,9 ) this.classificacao = "Excesso de Peso"
-            if (imc >= 30 &&  imc < 34,9 ) this.classificacao = "Obesidade"
+            if (imc >= 22 &&  imc < 25 ) this.classificacao = "Peso Normal"
+            if (imc >= 25 &&  imc < 30 ) this.classificacao = "Excesso de Peso"
+            if (imc >= 30 &&  imc < 35 ) this.classificacao = "Obesidade"
             if (imc >= 35 &&  imc < 80 ) this.classificacao = "Obesidade Severa"
             return imc.toFixed(2);
         
